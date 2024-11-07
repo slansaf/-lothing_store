@@ -72,20 +72,13 @@
 .thebrand img{
 	max-width: 571px;
 }
-/* 
-.line{
-	display: block;
-	border: 6px solid rgb(241, 109, 127);
-	height: 92px;
-	margin-right: 16px;
-} */
 
 .thebrand__title{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
-	border-left: 12px solid rgb(241, 109, 127);
+	border-left: 12px solid rgb(161 78 89);;
 	padding-left: 15px;
 }
 
@@ -105,7 +98,11 @@
 }
 
 .thebrand__title span{
-	color:rgb(241, 109, 127);
+	color:rgb(161 78 89);
+}
+
+.hidden_menu{
+	display: none;
 }
 
 .dropdown_menu{
@@ -121,6 +118,12 @@
 	font-size: 14px;
 	line-height: 17px;
 	text-align: left;
+}
+
+.close{
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .dropdown_menu h4{
@@ -141,11 +144,20 @@
 	padding-left: 22px;
 }
 
-.dropdown_menu a{
-	font-weight: 400;
-	color: rgb(111, 110, 110);
+.dropdown_menu ul li{
 	margin-bottom: 12px;
 }
+
+.dropdown_menu ul li a{
+	font-weight: 400;
+	color: rgb(111, 110, 110);
+}
+
+.dropdown_menu ul li a:hover{
+	color: indianred;
+	text-shadow: 0 0 20px #555;;
+}
+
 
 /*---------------Cards menu--------------------*/
 
@@ -472,6 +484,7 @@ form{
 	padding: 15px 22px;
 	border-radius: 20px 0 0 20px;
 	width: 250px;
+	cursor: pointer;
 }
 
 .subscribe__item2 button{
